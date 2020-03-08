@@ -1,0 +1,16 @@
+---
+- name: Deployment Playbook
+  vars:
+    cmd_list: "{{ lookup ('file','command.txt').splitlines() }}"
+  gather_facts: false
+  hosts: all
+  serial: 1
+  tasks:
+    - name: "Run Deployment Command"
+      shell: "{{item}}"
+      with_items: "{{cmd_list}}"
+      register: output
+    - debug: msg={{output.stdout}}
+        
+
+   

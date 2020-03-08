@@ -1,0 +1,6 @@
+[production]
+prod1  ansible_host=13.76.230.66 ansible_user=ubuntu
+
+[dev]
+dev1 ansible_host=wrk.rajesh ansible_user=root
+

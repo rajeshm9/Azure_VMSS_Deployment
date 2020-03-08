@@ -1,0 +1,6 @@
+[vmsshosts]
+{% for item in ip_list %} 
+prod1_{{item}}  ansible_host={{item}} ansible_user=ubuntu
+{% endfor %}
+
+

@@ -1,0 +1,5 @@
+[vmssscaleset]
+ 
+prod1_10.0.0.20  ansible_host=10.0.0.20 ansible_user=ubuntu
+
+
